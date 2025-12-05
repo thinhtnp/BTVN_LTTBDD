@@ -1,0 +1,8 @@
+Câu 1:
+Sau khi học xong môn Lập trình thiết bị di động, em mong muốn có thể tự làm được một ứng dụng đơn giản và hiểu rõ hơn cách một app hoạt động trên điện thoại. Em muốn nắm chắc các phần cơ bản như giao diện, xử lý chức năng và kết nối dữ liệu, để sau này có thể tự phát triển những ý tưởng của mình.
+Định hướng của em là tiếp tục học thêm về lập trình mobile, có thể theo Android hoặc Flutter, vì em thấy đây là lĩnh vực khá thú vị và thực tế. Em cũng muốn tham gia thêm các dự án nhỏ hoặc bài tập nhóm để có thêm kinh nghiệm. Nếu có cơ hội, em muốn thử sức với việc thực tập hoặc làm part-time liên quan đến mobile để nâng cao kỹ năng.
+
+Câu 2:
+Theo em, trong 10 năm tới lập trình di động chắc chắn vẫn phát triển mạnh. Lý do là ai cũng dùng điện thoại, và hầu như việc gì cũng làm qua app: mua hàng, xem phim, học online, thanh toán, đặt xe… Vì nhu cầu dùng app nhiều nên nhu cầu tạo ra app cũng sẽ tăng.
+Bên cạnh đó, công nghệ mới như AI, IoT hay thiết bị đeo thông minh đang phát triển nhanh, và phần lớn đều cần một ứng dụng di động để điều khiển hoặc kết nối. Doanh nghiệp cũng muốn có app riêng để phục vụ khách hàng tốt hơn. Vì vậy, cơ hội cho lập trình viên mobile trong thời gian tới vẫn rất lớn và ổn định.
+
