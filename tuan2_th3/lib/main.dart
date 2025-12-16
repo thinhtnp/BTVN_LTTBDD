@@ -4,7 +4,6 @@ void main() {
   runApp(const MyApp());
 }
 
-/// Widget gốc của ứng dụng
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Màn hình tính toán
+/// Màn hình
 class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({super.key});
 
@@ -32,7 +31,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   final TextEditingController secondNumberController =
   TextEditingController();
 
-  /// Kết quả hiển thị
   String resultText = "";
 
   /// Hàm tính toán
@@ -74,11 +72,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      resizeToAvoidBottomInset: true, 
-=======
       resizeToAvoidBottomInset: true,
->>>>>>> 2e3d5501f0a3dfeb892aa5da09596bd0bb25017f
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -86,7 +80,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               const SizedBox(height: 40),
 
-              /// Tiêu đề
               const Text(
                 "Thực hành 03",
                 style: TextStyle(
@@ -97,7 +90,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
               const SizedBox(height: 20),
 
-              /// Ô nhập số thứ nhất
+              /// n1
               TextField(
                 controller: firstNumberController,
                 keyboardType: TextInputType.number,
@@ -111,20 +104,20 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
               const SizedBox(height: 15),
 
-              /// Các nút phép toán
+              /// phép toán
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  operationButton("+", Colors.red),
+                  operationButton("/", Colors.red),
                   operationButton("-", Colors.amber),
-                  operationButton("*", Colors.purple),
-                  operationButton("/", Colors.black),
+                  operationButton("×", Colors.purple),
+                  operationButton("+", Colors.black),
                 ],
               ),
 
               const SizedBox(height: 20),
 
-              /// Ô nhập số thứ hai
+              /// n2
               TextField(
                 controller: secondNumberController,
                 keyboardType: TextInputType.number,
@@ -138,7 +131,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
               const SizedBox(height: 20),
 
-              /// Hiển thị kết quả
+              ///kết quả
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -153,11 +146,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     );
   }
 
-<<<<<<< HEAD
-  /// Widget tạo nút phép toán
-=======
-  /// Widget tạo nút phép toán 
->>>>>>> 2e3d5501f0a3dfeb892aa5da09596bd0bb25017f
+  ///  nút phép toán
   Widget operationButton(String symbol, Color color) {
     return SizedBox(
       width: 50,

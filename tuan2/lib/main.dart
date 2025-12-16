@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 
-/// Hàm main
 void main() {
   runApp(const MyApp());
 }
-/// Widget gốc của ứng dụng
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false, // Tắt banner DEBUG
-      home: NumberInputScreen(), // Màn hình chính
+      debugShowCheckedModeBanner: false,
+      home: NumberInputScreen(),
     );
   }
 }
-
 /// Màn hình nhập số và hiển thị danh sách
 class NumberInputScreen extends StatefulWidget {
   const NumberInputScreen({super.key});
@@ -26,13 +23,11 @@ class NumberInputScreen extends StatefulWidget {
 }
 
 class _NumberInputScreenState extends State<NumberInputScreen> {
-  /// Controller dùng để lấy dữ liệu từ TextField
+  ///lấy dữ liệu từ TextField
   final TextEditingController numberController = TextEditingController();
 
-  /// Thông báo lỗi khi nhập sai
   String errorText = "";
 
-  /// Danh sách số được tạo ra
   List<int> numberList = [];
 
   /// Hàm xử lý khi nhấn nút "Tạo"
@@ -41,13 +36,10 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
       errorText = "";
       numberList.clear();
 
-      // Lấy dữ liệu người dùng nhập
       String inputText = numberController.text.trim();
 
-      // Chuyển sang kiểu số nguyên
       int? quantity = int.tryParse(inputText);
 
-      // Kiểm tra dữ liệu hợp lệ
       if (quantity == null || quantity <= 0) {
         errorText = "Dữ liệu bạn nhập không hợp lệ";
       } else {
@@ -64,10 +56,9 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            /// Spacer dùng để đẩy nội dung nhập số vào giữa màn hình
             const Spacer(),
 
-            /// Tiêu đề
+
             const Text(
               "Thực hành 02",
               style: TextStyle(
@@ -79,7 +70,6 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
 
             const SizedBox(height: 20),
 
-            /// Ô nhập số + nút Tạo
             Row(
               children: [
                 Expanded(
@@ -108,7 +98,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
                   child: const Text(
                     "Tạo",
                     style: TextStyle(
-                      color: Colors.white, // màu chữ
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
