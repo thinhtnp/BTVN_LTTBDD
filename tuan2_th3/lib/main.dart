@@ -74,7 +74,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       resizeToAvoidBottomInset: true, 
+=======
+      resizeToAvoidBottomInset: true,
+>>>>>>> 2e3d5501f0a3dfeb892aa5da09596bd0bb25017f
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -149,7 +153,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     );
   }
 
+<<<<<<< HEAD
   /// Widget tạo nút phép toán
+=======
+  /// Widget tạo nút phép toán 
+>>>>>>> 2e3d5501f0a3dfeb892aa5da09596bd0bb25017f
   Widget operationButton(String symbol, Color color) {
     return SizedBox(
       width: 50,
