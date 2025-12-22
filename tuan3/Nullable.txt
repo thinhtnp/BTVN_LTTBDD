@@ -1,0 +1,20 @@
+
+Nullable trong Kotlin là kiểu dữ liệu cho phép biến nhận giá trị null
+Mặc định Kotlin không cho phép null, muốn dùng phải khai báo thêm dấu ?
+Cơ chế này giúp phát hiện và hạn chế lỗi NullPointerException ngay từ lúc biên dịch
+
+Nên dùng nullable khi:
+-Dữ liệu có thể không tồn tại hoặc chưa được khởi tạo
+-Giá trị phụ thuộc vào dữ liệu nhập của người dùng
+-Dữ liệu lấy từ API, cơ sở dữ liệu có khả năng trả về null
+
+Không nên dùng nullable khi:
+-Giá trị luôn bắt buộc phải có
+-Thuộc tính cốt lõi của đối tượng
+-Dữ liệu ảnh hưởng trực tiếp đến logic chính của chương trình
+
+Các cách xử lý null phổ biến trong Kotlin:
+-?. (Safe call): Truy cập an toàn khi biến không null
+-?: (Elvis): Gán giá trị mặc định khi null
+-let: Thực thi khối lệnh chỉ khi biến không null
+-!!: Ép buộc không null, có thể gây lỗi runtime nếu sai
