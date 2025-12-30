@@ -25,7 +25,7 @@ class ManHinhViDuNullable extends StatefulWidget {
 
 class _ManHinhViDuNullableState extends State<ManHinhViDuNullable> {
   /// Controller lấy dữ liệu từ ô nhập
-  final TextEditingController boDieuKhienTen =
+  final TextEditingController nhapTen =
   TextEditingController();
 
   /// Biến nullable
@@ -36,9 +36,9 @@ class _ManHinhViDuNullableState extends State<ManHinhViDuNullable> {
 
   void kiemTraNullable() {
     setState(() {
-      tenNguoiDung = boDieuKhienTen.text.trim().isEmpty
+      tenNguoiDung = nhapTen.text.trim().isEmpty
           ? null
-          : boDieuKhienTen.text.trim();
+          : nhapTen.text.trim();
 
       if (tenNguoiDung == null) {
         ketQua = "Bạn chưa nhập tên";
@@ -60,7 +60,7 @@ class _ManHinhViDuNullableState extends State<ManHinhViDuNullable> {
         child: Column(
           children: [
             TextField(
-              controller: boDieuKhienTen,
+              controller: nhapTen,
               decoration: const InputDecoration(
                 labelText: "Nhập tên",
                 border: OutlineInputBorder(),

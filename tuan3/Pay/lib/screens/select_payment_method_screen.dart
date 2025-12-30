@@ -15,7 +15,7 @@ class SelectPaymentMethodScreen extends StatefulWidget {
 class _SelectPaymentMethodScreenState
     extends State<SelectPaymentMethodScreen> {
 
-  // Chưa chọn phương thức thanh toán
+  // Chưa chọn thanh toán
   PaymentMethod? selectedMethod;
 
   // Danh sách các phương thức
