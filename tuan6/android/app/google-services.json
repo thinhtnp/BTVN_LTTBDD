@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63045075327",
+    "project_id": "tuan6-2a776",
+    "storage_bucket": "tuan6-2a776.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63045075327:android:0bf83f79622acb714bda4a",
+        "android_client_info": {
+          "package_name": "com.example.tuan6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdxYAsyZN1BfRFgWx7ueU7B0NVzNx5cDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
